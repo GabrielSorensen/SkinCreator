@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9m4-Pm-PY8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--ColoringBook-->
+        <scene sceneID="bZe-k2-uvh">
+            <objects>
+                <viewController title="ColoringBook" id="zfe-Dp-12p" customClass="ColoringBook" customModule="SkinCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cFa-wR-k9S"/>
+                        <viewControllerLayoutGuide type="bottom" id="X1t-pc-nz3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sce-ic-GGG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="mainImageView" translatesAutoresizingMaskIntoConstraints="NO" id="Nes-0s-KJ0" userLabel="MainImageView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <accessibility key="accessibilityConfiguration" identifier="mainImageView" label="mainImageView"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Y4-Dm-3f7" userLabel="tempImageView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="KAc-Bj-oEp">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Clear" id="OAH-zg-p2K">
+                                        <connections>
+                                            <action selector="Clear:" destination="zfe-Dp-12p" id="vWV-T3-ykY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title=" " id="OGA-uh-HwA"/>
+                                    <barButtonItem style="plain" id="rQU-KN-FaM">
+                                        <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="OwN-If-9qU">
+                                            <rect key="frame" x="86" y="7" width="118" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="sliderChanged:" destination="zfe-Dp-12p" eventType="valueChanged" id="W4t-yc-qt2"/>
+                                            </connections>
+                                        </slider>
+                                    </barButtonItem>
+                                    <barButtonItem title=" " id="JrH-gQ-coS"/>
+                                    <barButtonItem title="10.0px" id="P97-Ue-guB"/>
+                                    <barButtonItem title=" " id="Squ-vz-iEo"/>
+                                    <barButtonItem style="plain" id="9MB-Dj-XsE">
+                                        <stepper key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" id="USB-UA-CQ3">
+                                            <rect key="frame" x="304" y="8" width="94" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="changeColor:" destination="zfe-Dp-12p" eventType="valueChanged" id="E5q-BN-cd7"/>
+                                            </connections>
+                                        </stepper>
+                                    </barButtonItem>
+                                    <barButtonItem title=" " id="FSv-r1-zBr"/>
+                                    <barButtonItem title="CurrentColor" id="LYE-gY-hGZ"/>
+                                    <barButtonItem title=" " id="4ke-HZ-nBR"/>
+                                    <barButtonItem title="ShowOverlay" id="ahc-I3-IXC">
+                                        <connections>
+                                            <action selector="showOverlay:" destination="zfe-Dp-12p" id="92j-bl-wi8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KCE-Qd-SIe" userLabel="weaponMask">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KAc-Bj-oEp" firstAttribute="leading" secondItem="Sce-ic-GGG" secondAttribute="leading" id="BPS-z6-aKH"/>
+                            <constraint firstItem="4Y4-Dm-3f7" firstAttribute="bottom" secondItem="X1t-pc-nz3" secondAttribute="top" id="BXe-uc-TDE"/>
+                            <constraint firstItem="4Y4-Dm-3f7" firstAttribute="top" secondItem="KCE-Qd-SIe" secondAttribute="top" id="I2g-hP-T5I"/>
+                            <constraint firstItem="Nes-0s-KJ0" firstAttribute="bottom" secondItem="X1t-pc-nz3" secondAttribute="top" id="PL9-aU-bEY"/>
+                            <constraint firstItem="KAc-Bj-oEp" firstAttribute="trailing" secondItem="Nes-0s-KJ0" secondAttribute="trailing" id="QxL-Aa-f7j"/>
+                            <constraint firstItem="Nes-0s-KJ0" firstAttribute="top" secondItem="KCE-Qd-SIe" secondAttribute="top" id="aqi-MN-R3l"/>
+                            <constraint firstItem="KCE-Qd-SIe" firstAttribute="trailing" secondItem="Nes-0s-KJ0" secondAttribute="trailing" id="ceC-pf-Orm"/>
+                            <constraint firstAttribute="trailing" secondItem="KAc-Bj-oEp" secondAttribute="trailing" id="fj4-Mx-zhn"/>
+                            <constraint firstItem="KCE-Qd-SIe" firstAttribute="trailing" secondItem="4Y4-Dm-3f7" secondAttribute="trailing" id="jV0-W0-I8v"/>
+                            <constraint firstItem="KCE-Qd-SIe" firstAttribute="leading" secondItem="Nes-0s-KJ0" secondAttribute="leading" id="oAj-Na-vNK"/>
+                            <constraint firstItem="KAc-Bj-oEp" firstAttribute="leading" secondItem="Nes-0s-KJ0" secondAttribute="leading" id="oeI-Vg-V3W"/>
+                            <constraint firstItem="KCE-Qd-SIe" firstAttribute="bottom" secondItem="X1t-pc-nz3" secondAttribute="top" id="qMz-9n-7PU"/>
+                            <constraint firstItem="4Y4-Dm-3f7" firstAttribute="leading" secondItem="KCE-Qd-SIe" secondAttribute="leading" id="tnR-bY-0Pb"/>
+                            <constraint firstItem="KAc-Bj-oEp" firstAttribute="top" secondItem="cFa-wR-k9S" secondAttribute="bottom" id="vhH-LE-ffS"/>
+                            <constraint firstItem="KCE-Qd-SIe" firstAttribute="top" secondItem="KAc-Bj-oEp" secondAttribute="bottom" id="zp6-9W-MJr"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Texture Editor" image="pencilWhite" selectedImage="pencilWhite" id="rOZ-fP-gsW"/>
+                    <connections>
+                        <outlet property="brushLabel" destination="P97-Ue-guB" id="P3Z-N6-QpJ"/>
+                        <outlet property="colorStepper" destination="USB-UA-CQ3" id="JgW-iw-tc2"/>
+                        <outlet property="mainImageView" destination="Nes-0s-KJ0" id="elu-Xe-YNP"/>
+                        <outlet property="selectedColorLabel" destination="LYE-gY-hGZ" id="TSv-cC-mFc"/>
+                        <outlet property="showOverlayButton" destination="ahc-I3-IXC" id="6SE-CP-ahm"/>
+                        <outlet property="sizeSlider" destination="OwN-If-9qU" id="M0a-RU-XFr"/>
+                        <outlet property="tempImageView" destination="4Y4-Dm-3f7" id="lOA-QN-57J"/>
+                        <outlet property="toolbar" destination="KAc-Bj-oEp" id="Jeh-Fw-KtM"/>
+                        <outlet property="weaponMask" destination="KCE-Qd-SIe" id="6s1-Yd-Ncp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iqc-mj-9en" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205" y="435"/>
+        </scene>
+        <!--ThirdDimension-->
+        <scene sceneID="c7B-fN-3PJ">
+            <objects>
+                <viewController title="ThirdDimension" id="i08-9o-bTK" customClass="ThirdDimension" customModule="SkinCreator" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DNN-vi-Mmj"/>
+                        <viewControllerLayoutGuide type="bottom" id="fPT-zW-mcv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t64-D7-RJd" customClass="SCNView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" allowsCameraControl="YES" autoenablesDefaultLighting="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bsl-zF-6He">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                            </sceneKitView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Bsl-zF-6He" secondAttribute="trailing" id="Hd7-82-04q"/>
+                            <constraint firstItem="Bsl-zF-6He" firstAttribute="top" secondItem="DNN-vi-Mmj" secondAttribute="bottom" id="TDg-ek-a5b"/>
+                            <constraint firstItem="Bsl-zF-6He" firstAttribute="leading" secondItem="t64-D7-RJd" secondAttribute="leading" id="ejM-yf-RQl"/>
+                            <constraint firstItem="Bsl-zF-6He" firstAttribute="bottom" secondItem="fPT-zW-mcv" secondAttribute="top" id="hBU-Cp-kJ2"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Model Viewer" image="boxWhite" selectedImage="boxWhite" id="i3b-hO-qKn"/>
+                    <connections>
+                        <outlet property="sceneView" destination="Bsl-zF-6He" id="bm8-Gg-5eS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6c7-9p-PMf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-505" y="443"/>
+        </scene>
+        <!--SelectModels-->
+        <scene sceneID="QmK-el-hei">
+            <objects>
+                <viewController title="SelectModels" id="J7W-8E-Dv7" customClass="SelectModels" customModule="SkinCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TVg-0T-hMQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="7d5-K3-Gsu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hzL-Oj-0dY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Model Selection" image="listWhite" selectedImage="listWhite" id="qHG-Rw-Kjh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AY6-38-NX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="435"/>
+        </scene>
+        <!--TabController-->
+        <scene sceneID="LJn-7t-tff">
+            <objects>
+                <tabBarController title="TabController" modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9m4-Pm-PY8" customClass="TabController" customModule="SkinCreator" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" itemPositioning="fill" id="cnh-im-8RM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="i08-9o-bTK" kind="relationship" relationship="viewControllers" id="tG3-EA-wOh"/>
+                        <segue destination="zfe-Dp-12p" kind="relationship" relationship="viewControllers" id="2MF-kZ-keo"/>
+                        <segue destination="J7W-8E-Dv7" kind="relationship" relationship="viewControllers" id="Gr7-lJ-Acf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ALD-sd-62x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205" y="-401"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="boxWhite" width="50" height="50"/>
+        <image name="listWhite" width="50" height="50"/>
+        <image name="pencilWhite" width="50" height="50"/>
+    </resources>
+</document>

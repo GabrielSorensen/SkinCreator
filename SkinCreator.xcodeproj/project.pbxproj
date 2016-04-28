@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		801387311CA300FC0096771F /* ModelDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801387301CA300FC0096771F /* ModelDetails.swift */; };
+		801387331CA306D30096771F /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 801387321CA306D30096771F /* SceneKit.framework */; };
+		804DACFD1CB56CC800E9096D /* SelectModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804DACFC1CB56CC800E9096D /* SelectModels.swift */; };
+		805719FB1CA98F370009788F /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805719FA1CA98F370009788F /* TabController.swift */; };
+		805719FD1CA98FB40009788F /* ThirdDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805719FC1CA98FB40009788F /* ThirdDimension.swift */; };
+		805719FF1CA992D80009788F /* ColoringBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805719FE1CA992D80009788F /* ColoringBook.swift */; };
+		8095D9E61CC0C129004D1422 /* UIImage-Targa.m in Sources */ = {isa = PBXBuildFile; fileRef = 8095D9E51CC0C129004D1422 /* UIImage-Targa.m */; };
+		80BBC5191C9C5D1C0040394C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BBC5181C9C5D1C0040394C /* AppDelegate.swift */; };
+		80BBC51B1C9C5D1C0040394C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BBC51A1C9C5D1C0040394C /* ViewController.swift */; };
+		80BBC51E1C9C5D1C0040394C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BBC51C1C9C5D1C0040394C /* Main.storyboard */; };
+		80BBC5201C9C5D1C0040394C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80BBC51F1C9C5D1C0040394C /* Assets.xcassets */; };
+		80BBC5231C9C5D1D0040394C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BBC5211C9C5D1D0040394C /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		801387301CA300FC0096771F /* ModelDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelDetails.swift; sourceTree = "<group>"; };
+		801387321CA306D30096771F /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		804DACFC1CB56CC800E9096D /* SelectModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectModels.swift; sourceTree = "<group>"; };
+		805719FA1CA98F370009788F /* TabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		805719FC1CA98FB40009788F /* ThirdDimension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdDimension.swift; path = ../ThirdDimension.swift; sourceTree = "<group>"; };
+		805719FE1CA992D80009788F /* ColoringBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColoringBook.swift; path = ../ColoringBook.swift; sourceTree = "<group>"; };
+		8095D9E31CC0C0C6004D1422 /* UIImage-Targa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage-Targa.h"; sourceTree = "<group>"; };
+		8095D9E41CC0C128004D1422 /* SkinCreator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SkinCreator-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		8095D9E51CC0C129004D1422 /* UIImage-Targa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage-Targa.m"; sourceTree = "<group>"; };
+		80BBC5151C9C5D1C0040394C /* SkinCreator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkinCreator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80BBC5181C9C5D1C0040394C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80BBC51A1C9C5D1C0040394C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80BBC51D1C9C5D1C0040394C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80BBC51F1C9C5D1C0040394C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80BBC5221C9C5D1D0040394C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80BBC5241C9C5D1D0040394C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80BBC5121C9C5D1C0040394C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				801387331CA306D30096771F /* SceneKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80BBC50C1C9C5D1C0040394C = {
+			isa = PBXGroup;
+			children = (
+				801387321CA306D30096771F /* SceneKit.framework */,
+				80BBC5171C9C5D1C0040394C /* SkinCreator */,
+				80BBC5161C9C5D1C0040394C /* Products */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 1;
+		};
+		80BBC5161C9C5D1C0040394C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80BBC5151C9C5D1C0040394C /* SkinCreator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80BBC5171C9C5D1C0040394C /* SkinCreator */ = {
+			isa = PBXGroup;
+			children = (
+				8095D9E41CC0C128004D1422 /* SkinCreator-Bridging-Header.h */,
+				8095D9E51CC0C129004D1422 /* UIImage-Targa.m */,
+				8095D9E31CC0C0C6004D1422 /* UIImage-Targa.h */,
+				80BBC5181C9C5D1C0040394C /* AppDelegate.swift */,
+				801387301CA300FC0096771F /* ModelDetails.swift */,
+				805719FA1CA98F370009788F /* TabController.swift */,
+				805719FE1CA992D80009788F /* ColoringBook.swift */,
+				804DACFC1CB56CC800E9096D /* SelectModels.swift */,
+				805719FC1CA98FB40009788F /* ThirdDimension.swift */,
+				80BBC51A1C9C5D1C0040394C /* ViewController.swift */,
+				80BBC51C1C9C5D1C0040394C /* Main.storyboard */,
+				80BBC51F1C9C5D1C0040394C /* Assets.xcassets */,
+				80BBC5211C9C5D1D0040394C /* LaunchScreen.storyboard */,
+				80BBC5241C9C5D1D0040394C /* Info.plist */,
+			);
+			path = SkinCreator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80BBC5141C9C5D1C0040394C /* SkinCreator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80BBC5271C9C5D1D0040394C /* Build configuration list for PBXNativeTarget "SkinCreator" */;
+			buildPhases = (
+				80BBC5111C9C5D1C0040394C /* Sources */,
+				80BBC5121C9C5D1C0040394C /* Frameworks */,
+				80BBC5131C9C5D1C0040394C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkinCreator;
+			productName = SkinCreator;
+			productReference = 80BBC5151C9C5D1C0040394C /* SkinCreator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80BBC50D1C9C5D1C0040394C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = TeamEvil;
+				TargetAttributes = {
+					80BBC5141C9C5D1C0040394C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9R2BTN44JH;
+					};
+				};
+			};
+			buildConfigurationList = 80BBC5101C9C5D1C0040394C /* Build configuration list for PBXProject "SkinCreator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80BBC50C1C9C5D1C0040394C;
+			productRefGroup = 80BBC5161C9C5D1C0040394C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80BBC5141C9C5D1C0040394C /* SkinCreator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80BBC5131C9C5D1C0040394C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80BBC5231C9C5D1D0040394C /* LaunchScreen.storyboard in Resources */,
+				80BBC5201C9C5D1C0040394C /* Assets.xcassets in Resources */,
+				80BBC51E1C9C5D1C0040394C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80BBC5111C9C5D1C0040394C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				801387311CA300FC0096771F /* ModelDetails.swift in Sources */,
+				804DACFD1CB56CC800E9096D /* SelectModels.swift in Sources */,
+				805719FB1CA98F370009788F /* TabController.swift in Sources */,
+				80BBC51B1C9C5D1C0040394C /* ViewController.swift in Sources */,
+				80BBC5191C9C5D1C0040394C /* AppDelegate.swift in Sources */,
+				805719FD1CA98FB40009788F /* ThirdDimension.swift in Sources */,
+				805719FF1CA992D80009788F /* ColoringBook.swift in Sources */,
+				8095D9E61CC0C129004D1422 /* UIImage-Targa.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		80BBC51C1C9C5D1C0040394C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80BBC51D1C9C5D1C0040394C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80BBC5211C9C5D1D0040394C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80BBC5221C9C5D1D0040394C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80BBC5251C9C5D1D0040394C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80BBC5261C9C5D1D0040394C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80BBC5281C9C5D1D0040394C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SkinCreator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SkinCreator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SkinCreator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80BBC5291C9C5D1D0040394C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SkinCreator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SkinCreator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SkinCreator-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80BBC5101C9C5D1C0040394C /* Build configuration list for PBXProject "SkinCreator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80BBC5251C9C5D1D0040394C /* Debug */,
+				80BBC5261C9C5D1D0040394C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80BBC5271C9C5D1D0040394C /* Build configuration list for PBXNativeTarget "SkinCreator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80BBC5281C9C5D1D0040394C /* Debug */,
+				80BBC5291C9C5D1D0040394C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80BBC50D1C9C5D1C0040394C /* Project object */;
+}
